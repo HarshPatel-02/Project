@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="client.master.cs" Inherits="client" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div class="auto-style3">
+    <style type="text/css">
+        .style1
+        {            width: 61px;      
+
+        }
+        
+        .button{
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    text-decoration: none;  
+    color:#ffffff;
+    width: 80px;
+    height:40px;
+    font-size: 20px;
+    border-radius:15px;
+    background-color: #16437E;
+    text-align: center;
+    font-family:'Century Gothic';
+    font-weight:550;
+}
+      
+        li {
+  display: inline;
+  text-align:center;
+  margin: 20px 70px 25px 50px;
+
+}
+        .auto-style3 {
+            text-align: center;
+        }
+        nav{
+            position:sticky;
+           position: -webkit-sticky;
+           top:0;
+        }
+        ul {
+            height:50px;
+             border-radius: 34px;
+        }
+        </style>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label1" runat="server" Font-Names="Bahnschrift" Font-Size="50pt" Text="FutureTech" Font-Overline="False" Font-Strikeout="False"></asp:Label>
+        </div>
+  
+    <nav>
+        <ul style="background-color:#16437E;">
+        <li>
+                <asp:Button ID="Button1" runat="server" Text="Home" CssClass="button" />
+        </li>
+        <li>
+                <asp:Button ID="Button2" runat="server" Text="Dell"  CssClass="button"/>
+        </li>
+        <li>
+                <asp:Button ID="Button3" runat="server" Text="Hp"  CssClass="button"/>
+        </li>
+        <li>
+                <asp:Button ID="Button4" runat="server" Text="Lenovo"  CssClass="button"/>
+        </li>
+        <li>
+                <asp:Button ID="Button5" runat="server" Text="Feedback"  CssClass="button"/>
+        </li>
+        <li>
+                <asp:Button ID="btnlogin" runat="server" Text="Login"  CssClass="button" PostBackUrl="~/Login.aspx"/>
+        </li>
+</ul>
+        </nav>
+       
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+        <h3 align="center" style=" background-image:linear-gradient(to right,#11998e,#38ef7d); color:blue; height:50px; width:100%;padding:20px 5px 1px; font-size: x-large;"><em style="color: blue">Copyright@leptop Devloped by HarshPatel</em></h3>
+       
+    </div>
+    </form>
+</body>
+</html>
